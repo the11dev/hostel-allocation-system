@@ -1,0 +1,266 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    /* Vaishnavi's Theme: Soft Lavender & Pink Gradient */
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); 
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* ===== LAYOUT ===== */
+.site-wrapper {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 25px 50px;
+}
+
+/* ===== HEADER / NAVBAR ===== */
+.site-header {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #8b5cf6; /* Violet */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #555;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(139, 92, 246, 0.1); /* Light Violet Hover */
+    color: #7c3aed;
+}
+
+/* ===== MAIN CARD ===== */
+.main-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 24px;
+    padding: 35px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.page-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 8px;
+    background: -webkit-linear-gradient(#d946ef, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-subtitle {
+    font-size: 15px;
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+/* ===== DASHBOARD ACTIONS ===== */
+.grid-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.action-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #f3f4f6;
+    height: 100%;
+}
+
+.action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.action-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.action-desc {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* ===== BUTTONS ===== */
+.btn, .link-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 24px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary, .link-btn {
+    background: linear-gradient(135deg, #d946ef 0%, #8b5cf6 100%); /* Pink to Violet */
+    color: white;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+.btn-primary:hover, .link-btn:hover {
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+.btn-secondary:hover {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+/* ===== FORMS ===== */
+.form-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b5563;
+    margin-bottom: 8px;
+}
+
+input[type=text], input[type=number], select {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 2px solid #e5e7eb;
+    font-size: 14px;
+    background: #fff;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #d946ef;
+    box-shadow: 0 0 0 4px rgba(217, 70, 239, 0.1);
+}
+
+/* ===== TABLES ===== */
+.table-wrapper {
+    margin-top: 25px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #f3f4f6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background: #fdf4ff; /* Light Pink */
+}
+
+table th {
+    padding: 16px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #d946ef;
+    text-align: left;
+}
+
+table td {
+    padding: 16px 20px;
+    font-size: 14px;
+    color: #4b5563;
+    border-bottom: 1px solid #f9fafb;
+}
+
+table tbody tr:hover {
+    background: #faf5ff; /* Very Light Violet */
+}
+
+/* ===== MESSAGES ===== */
+.success-message {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #a7f3d0;
+}
+
+.error-message {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #fecaca;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    color: #6b7280;
+}
