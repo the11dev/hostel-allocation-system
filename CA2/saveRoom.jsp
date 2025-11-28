@@ -13,7 +13,7 @@
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hosteldb","root","Vm@1105");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hosteldb","root","pass");
             PreparedStatement ps = con.prepareStatement("INSERT INTO rooms(room_number, room_type, price) VALUES (?, ?, ?)");
             ps.setString(1, roomNo);
             ps.setString(2, type);
