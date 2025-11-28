@@ -10,21 +10,20 @@
 
 body {
     min-height: 100vh;
-    /* Vaishnavi's Theme: Soft Lavender & Pink Gradient */
     background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); 
     background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
     background-attachment: fixed;
     color: #333;
 }
 
-/* ===== LAYOUT ===== */
+/* LAYOUT */
 .site-wrapper {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0 25px 50px;
 }
 
-/* ===== HEADER / NAVBAR ===== */
+/* NAVBAR */
 .site-header {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
@@ -41,7 +40,7 @@ body {
 .logo {
     font-size: 24px;
     font-weight: 700;
-    color: #8b5cf6; /* Violet */
+    color: #8b5cf6; 
     display: flex;
     align-items: center;
     gap: 10px;
@@ -63,11 +62,11 @@ body {
 }
 
 .nav-links a:hover {
-    background: rgba(139, 92, 246, 0.1); /* Light Violet Hover */
+    background: rgba(139, 92, 246, 0.1); 
     color: #7c3aed;
 }
 
-/* ===== MAIN CARD ===== */
+/*  MAIN CARD  */
 .main-card {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 24px;
@@ -92,7 +91,7 @@ body {
     margin-bottom: 25px;
 }
 
-/* ===== DASHBOARD ACTIONS ===== */
+/* DASHBOARD ACTIONS */
 .grid-actions {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -132,7 +131,7 @@ body {
     line-height: 1.5;
 }
 
-/* ===== BUTTONS ===== */
+/* BUTTONS */
 .btn, .link-btn {
     display: inline-flex;
     align-items: center;
@@ -150,7 +149,7 @@ body {
 }
 
 .btn-primary, .link-btn {
-    background: linear-gradient(135deg, #d946ef 0%, #8b5cf6 100%); /* Pink to Violet */
+    background: linear-gradient(135deg, #d946ef 0%, #8b5cf6 100%); 
     color: white;
     box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
 }
@@ -170,7 +169,7 @@ body {
     color: #111827;
 }
 
-/* ===== FORMS ===== */
+/* FORMS */
 .form-grid {
     display: grid;
     gap: 20px;
@@ -200,7 +199,7 @@ input:focus, select:focus {
     box-shadow: 0 0 0 4px rgba(217, 70, 239, 0.1);
 }
 
-/* ===== TABLES ===== */
+/* TABLES */
 .table-wrapper {
     margin-top: 25px;
     border-radius: 16px;
@@ -214,7 +213,7 @@ table {
 }
 
 table thead {
-    background: #fdf4ff; /* Light Pink */
+    background: #fdf4ff; 
 }
 
 table th {
@@ -235,10 +234,10 @@ table td {
 }
 
 table tbody tr:hover {
-    background: #faf5ff; /* Very Light Violet */
+    background: #faf5ff; 
 }
 
-/* ===== MESSAGES ===== */
+/* MESSAGES */
 .success-message {
     background: #d1fae5;
     color: #065f46;
@@ -257,7 +256,7 @@ table tbody tr:hover {
     border: 1px solid #fecaca;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 .site-footer {
     text-align: center;
     margin-top: 40px;
