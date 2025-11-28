@@ -35,7 +35,7 @@
                 <%
                     try {
                         Class.forName("com.mysql.cj.jdbc.Driver");
-                        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hosteldb","root","Vm@1105");
+                        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hosteldb","root","pass");
                         String q = "SELECT b.booking_id, b.student_name, b.booking_date, r.room_number, r.room_type " +
                                    "FROM bookings b JOIN rooms r ON b.room_id = r.id ORDER BY b.booking_id DESC";
                         ResultSet rs = con.createStatement().executeQuery(q);
